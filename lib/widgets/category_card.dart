@@ -15,15 +15,15 @@ class CategoryCard extends StatelessWidget {
         height: 85,
         width: 160,
         decoration: BoxDecoration(
+          color: Colors.blue,
           borderRadius: BorderRadius.circular(12),
-          color: Colors.amber,
           image:  DecorationImage(
               image: AssetImage(category.image), fit: BoxFit.fill),
         ),
         child:  Center(
           child: Text(
             category.categoryName,
-            style: TextStyle(
+            style: const TextStyle(
                 color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
           ),
         ),
